@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andika | Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">AARDY.</a>
+            <ul>
+                <li><a href="#" onclick="bukaHalaman('home')">Home</a></li>
+                <li><a href="#" onclick="bukaHalaman('profile')">Profile</a></li>
+                <li><a href="#" onclick="bukaHalaman('karya')">Karya</a></li>
+                <li><a href="#" onclick="bukaHalaman('media')">Media</a></li>
+                <li><a href="#" onclick="bukaHalaman('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="halaman fade-in">
+            <div class="hero-section">
+                <h1>Halo, Saya Andika Ardiyansah.</h1>
+                <p>Membangun masa depan teknologi dengan kode yang bersih dan aman.</p>
+                <button onclick="bukaHalaman('profile')" class="btn-utama">Tentang Saya</button>
+            </div>
+        </section>
+
+        <section id="profile" class="halaman fade-in" style="display: none;">
+            <h2>Profil Saya</h2>
+            <div class="card profile-card">
+                <img src="Fotoprofil.png" alt="Foto Profil" class="foto-bulat">
+                
+                <div class="bio-singkat">
+                    <p>"Saya adalah mahasiswa semester 1 yang memiliki ketertarikan mendalam pada <strong>Cyber Security</strong> dan <strong>Web Development</strong>. Saya lulusan SMK TKJ yang kini sedang menempuh pendidikan tinggi untuk memperdalam logika pemrograman dan sistem informasi."</p>
+                </div>
+
+                <hr class="garis-pemisah">
+
+                <div class="info-pribadi">
+                    <div class="info-item">
+                        <strong>Nama Lengkap:</strong>
+                        <span>Andika Ardiyansah</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Universitas:</strong>
+                        <span>Universitas Pamulang</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Fakultas / Prodi:</strong>
+                        <span>Ilmu Komputer / Sistem Informasi</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Minat Utama:</strong>
+                        <span>Cyber Security & Web Design</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Domisili:</strong>
+                        <span>Purwokerto</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="karya" class="halaman fade-in" style="display: none;">
+            <h2>Project Saya</h2>
+            <div class="grid-container">
+                
+                <div class="card-project">
+                    <img src="p1.png" alt="Foto Project Web" class="img-project">
+                    <div class="project-info">
+                        <h3>Website Portofolio</h3>
+                        <p>Project UAS membuat website dinamis dengan HTML, CSS, JS.</p>
+                    </div>
+                </div>
+
+                <div class="card-project">
+                    <img src="p2.png" alt="Foto Project C++" class="img-project">
+                    <div class="project-info">
+                        <h3>Aplikasi Kasir (C++)</h3>
+                        <p>Program penghitung total belanja sederhana menggunakan C++.</p>
+                    </div>
+                </div>
+
+                <div class="card-project">
+                    <img src="p3.png" alt="Foto Project Jaringan" class="img-project">
+                    <div class="project-info">
+                        <h3>Desain Jaringan TKJ</h3>
+                        <p>Simulasi topologi jaringan menggunakan Cisco Packet Tracer.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="media" class="halaman fade-in" style="display: none;">
+            <h2>Galeri & Dokumentasi</h2>
+            
+            <div class="grid-container">
+                
+                <div class="card-media">
+                    <img src="seminar.jpg" alt="Foto Kegiatan 1">
+                    <p class="media-caption">Dokumentasi Seminar</p>
+                </div>
+
+                <div class="card-media">
+                    <img src="kelulusan.jpg" alt="Foto Kegiatan 2">
+                    <p class="media-caption">Sertifikat Kelulusan</p>
+                </div>
+
+                <div class="card-media">
+                    <img src="team.jpg" alt="Foto Kegiatan 3">
+                    <p class="media-caption">Foto Bersama Tim</p>
+                </div>
+
+                <div class="card-media">
+                    <div class="media-wrapper">
+                        <video controls>
+                            <source src="WhatsApp Video 2023-05-17 at 07.05.19.mp4" type="video/mp4">
+                            Browser tidak support video.
+                        </video>
+                    </div>
+                    <p class="media-caption">Video Presentasi Project</p>
+                </div>
+
+                <div class="card-media">
+                    <div class="media-wrapper audio-box">
+                        <div style="font-size: 40px; margin-bottom: 10px;">🎵</div>
+                        <audio controls style="width: 100%;">
+                            <source src="cover.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <p class="media-caption">Rekaman Cover Lagu</p>
+                </div>
+
+                <div class="card-media">
+                    <div class="media-wrapper pdf-box">
+                        <div style="font-size: 40px; margin-bottom: 10px;">📄</div>
+                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Curriculum Vitae (CV)</p>
+                        <a href="CV.pdf" target="_blank" class="btn-utama btn-sm">Lihat PDF</a>
+                    </div>
+                    <p class="media-caption">Dokumen Portofolio</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="halaman fade-in" style="display: none;">
+            <h2>Hubungi Saya</h2>
+            <div class="card contact-card">
+                <p>Silakan hubungi saya melalui sosial media atau kirim pesan email langsung.</p>
+                
+                <div class="social-buttons">
+                    <a href="https://github.com/andikaardy" target="_blank" class="btn-social github">GitHub</a>
+                    <a href="https://linkedin.com/in/andika-ardiyansah" target="_blank" class="btn-social linkedin">LinkedIn</a>
+                    <a href="mailto:andikaardiansyah497@gmail.com" class="btn-social email">Email</a>
+                </div>
+
+                <hr class="garis-pemisah">
+
+                <form action="mailto:andikaardiansyah497@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="Nama" placeholder="Nama Anda" required>
+                    <input type="text" name="Subjek" placeholder="Keperluan / Subjek" required>
+                    <textarea name="Pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+                    <button type="submit" class="btn-utama full-width">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dibuat oleh Andika Ardiyansah (AARDY).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
